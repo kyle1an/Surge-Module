@@ -1,5 +1,5 @@
 #!name=Script - rm ads & unlock By nzw9314
-#!desc=该脚本合集用于Remove Ads + unlock vip. 集成: NobyDa、yichahucha、Choler、langkhach以及个人收集整理的脚本. YouTube Premium 请添加 "-*.googlevideo.com" 到hostname, 否则无法加载视频.
+#!desc=该 Remove Ads & unlock vip 集成 NobyDa、yichahucha、Choler、langkhach 和 nzw9314 收集整理的脚本. YouTube Premium 无法加载视频请添加 "-*.googlevideo.com" 到hostname.
 #!system=ios
 
 [Script]
@@ -49,16 +49,19 @@ Keep.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/S
 CamScanner.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,type=http-response,pattern=^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?
 # VUE pro
 VUE.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js,type=http-response,pattern=^https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare)
+
 # > 以下为nzw9314收集整理
 # > 幕布(by @superuv)
 mb.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/mb.js,type=http-response,pattern=https:\/\/mubu\.com\/api\/app\/user\/info
 # # > Bear熊掌记 (By Miao Miao)
 # bear.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/bear.js,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+
 # > sunshy
 # > Fantastical 内购解锁 (By @sunshy)
 fantastical.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/fantastical.js,type=http-response,pattern=^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$
 # > SoloLearn Unlock PRO & Platinum Moderator (By @sunshy)
 sololearn.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/sololearn.js,type=http-response,pattern=https:\/\/api\.sololearn\.com\/(authenticateDevice|challenge\/GetContestFeed|Profile\/GetProfile)$
+
 # > CheeryTodo
 # Pillow (By @CheeryTodo)
 pillow.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/pillow.js,type=http-response,pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts)
@@ -78,16 +81,15 @@ Wps.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.co
 XMind.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/XMind.js,type=http-response,pattern=https:\/\/www\.xmind\.cn\/\_res\/devices
 # 可可英语会员
 kkyy.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/kkyy.js,type=http-response,pattern=^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php
+
 # > Langkhach越南老哥
 # > NOMO
 nomo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/nomo.js,script-update-interval=0,type=http-response,pattern=^https:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_product_list
 # > grammarly
 grammarly.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/grammarly.js,script-update-interval=0,type=http-response,pattern=^https:\/\/subscription\.grammarly\.com\/api\/v1$
-
 # > Ulysses
 http-request ^https:\/\/sk\.ulysses\.app\/api\/v1\/user_offers$ script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/cleancacheulysses.js
 http-response ^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/ulysses.js
-
 # > Dayone
 # 1.启用本脚本与 pre 脚本
 # 2.重启 Day One，稍等片刻等待高级版出现
