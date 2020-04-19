@@ -1,5 +1,5 @@
-#!name=Script - rm ads & unlock
-#!desc=Remove Ads & unlock vip 集成 NobyDa、yichahucha、Choler、langkhach 和 nzw9314 收集整理的脚本. YouTube Premium 无法加载视频请添加 "-*.googlevideo.com" 到hostname.
+#!name=Script - rm ads & unlock vip
+#!desc=集成 NobyDa、yichahucha、Choler、langkhach 和 nzw9314 收集整理的脚本.
 #!system=ios
 
 [Script]
@@ -23,7 +23,7 @@ Aweme.js = script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-
 Aweme.js = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-response,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v1.*\/(feed|post)
 # > 微信公众号
 WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
-# > YouTube
+# > YouTube (YouTube Premium 请添加 -*.googlevideo.com 到hostname, 否则无法加载视频)
 YouTube.js = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)
 
 # > IT之家 去新闻列表广告
