@@ -1,0 +1,25 @@
+#!name=Unlock
+#!desc= 
+#!system=ios
+
+[Script]
+# > Choler
+# > 微信公众号
+WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
+
+# > Langkhach越南老哥
+calm.vip.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/calm.vip.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.calm\.com\/(me$|receipt$)
+# > Dayone
+# 1.启用本脚本与 pre 脚本
+# 2.重启 Day One，稍等片刻等待高级版出现
+# 3.禁用掉 pre 脚本，重启 Day One，确认高级版状况不变
+# pre_dayone
+// dayone-pre.js = debug=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/dayone-pre.js,type=http-request,pattern=^https:\/\/dayone\.me\/api\/users$
+dayone.surge.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/dayone.surge.js,script-update-interval=0,type=http-response,pattern=^https:\/\/dayone\.me\/api\/(users|v2\/users\/(account-status|receipt))$
+draft.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/draft.js,script-update-interval=0,type=http-response,pattern=^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification
+musixmatch.miao.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/musixmatch.miao.js,script-update-interval=0,type=http-response,pattern=^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get
+Pdfexpert.vip.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Pdfexpert.vip.js,script-update-interval=0,type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$)
+workingcopy.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/workingcopy.js,script-update-interval=0,type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$
+
+[MITM]
+hostname = mp.weixin.qq.com, api.calm.com, www.calm.com, dayone.me, backend.getdrafts.com, *.musical.ly, license.pdfexpert.com, education.github.com
