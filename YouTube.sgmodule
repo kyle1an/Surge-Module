@@ -1,0 +1,11 @@
+#!name=YouTube rm ads
+#!desc=Remove Ads by Choler、langkhach. 
+#!system=ios
+
+[Script]
+# > Choler
+# > YouTube YouTube Premium 无法加载视频请添加 -*.googlevideo.com 到hostname.
+YouTube.js = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)
+
+[MITM]
+hostname = %APPEND% *.googlevideo.com
