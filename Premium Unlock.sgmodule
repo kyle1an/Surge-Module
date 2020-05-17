@@ -22,6 +22,8 @@ vsco.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/S
 workingcopy.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/workingcopy.js,script-update-interval=0,type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$
 # > WPS (By eHpo1)
 Wps.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,type=http-response,pattern=^https://account.wps.*/api/users/
+# > 人人视频 解锁AI原画 (by@george Jiang & R)
+rrtv.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/rrtv.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
 
 [MITM]
-hostname = %APPEND% api.blinkist.com, api.calm.com, www.calm.com, dayone.me, backend.getdrafts.com, api.flexibits.com, apic.musixmatch.com, license.pdfexpert.com, vsco.co, education.github.com, account.wps.*
+hostname = %APPEND% api.blinkist.com, api.calm.com, www.calm.com, dayone.me, backend.getdrafts.com, api.flexibits.com, apic.musixmatch.com, license.pdfexpert.com, vsco.co, education.github.com, account.wps.*, api.rr.tv
