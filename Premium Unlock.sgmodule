@@ -5,7 +5,8 @@
 [Script]
 # > Langkhach越南老哥
 blinkist.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/blinkist.js,type=http-response,pattern=^https:\/\/api\.blinkist\.com\/v4\/(me$|me.json$|me\/access$)
-calm.vip.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/calm.vip.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.calm\.com\/(me$|receipt$)
+// calm.vip.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/calm.vip.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.calm\.com\/(me$|receipt$)
+// api.calm.com, www.calm.com,
 # > Dayone
 # 1.启用本脚本与 pre 脚本
 # 2.重启 Day One，稍等片刻等待高级版出现
@@ -24,4 +25,4 @@ workingcopy.js = requires-body=1,max-size=0,script-path=https://raw.githubuserco
 Wps.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,type=http-response,pattern=^https://account.wps.*/api/users/
 
 [MITM]
-hostname = %APPEND% api.blinkist.com, api.calm.com, www.calm.com, dayone.me, backend.getdrafts.com, api.flexibits.com, apic.musixmatch.com, license.pdfexpert.com, vsco.co, education.github.com, account.wps.*
+hostname = %APPEND% api.blinkist.com, dayone.me, backend.getdrafts.com, api.flexibits.com, apic.musixmatch.com, license.pdfexpert.com, vsco.co, education.github.com, account.wps.*
